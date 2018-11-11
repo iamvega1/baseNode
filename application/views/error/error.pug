@@ -1,0 +1,14 @@
+extends ../layout.pug
+block content
+	div.container.jumbotron.my-5
+		div.container
+			div.row
+				div.col-md-12
+					h1.text-center.display-4 Error N° #{error.status}: 
+						span.display-6= error.statusText
+			div.row.justify-content-md-center
+				div.col-md-6
+					img.img-fluid.rounded(src=error.src)
+			div.row.justify-content-md-center
+				div.col-md-6.py-2
+					h3.text-center.display-3 #{error.message}

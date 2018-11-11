@@ -1,0 +1,43 @@
+div.modal.fade#loginModal
+	div.modal-dialog
+		div.modal-content
+			div.modal-body
+				div.form
+					div.tab-content
+						div#login
+							h1 Welcome
+							form(action="/login" method="post")
+								div.field-wrap
+									label Email Adress <span class="req">*</span>
+									input(type="email" required autocomplete="off")
+
+								div.field-wrap
+									label Password <span class="req">*</span>
+									input(type="password" required autocomplete="off")
+
+								p.forgot
+									a(href="#") Forgot Password?
+
+								div.field-wrap.mb-1
+									p.text-white.my-0 More options
+
+								div.fiel-wrap.option.pb-3.text-center
+									a(href="#") <i class="fa fa-google-plus-official fa-4x"></i>
+
+								button.button.button-block Log In
+
+						div#orlogin
+							h1 Options
+							form(action="/" method="post")
+								div.field-wrap
+									label Email Adress <span class="req">*</span>
+									input(type="email" required autocomplete="off")
+
+								div.field-wrap
+									label Password <span class="req">*</span>
+									input(type="password" required autocomplete="off")
+
+								p.forgot
+									a(href="#") Forgot Password?
+
+								button.button.button-block Log In

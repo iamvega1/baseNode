@@ -1,0 +1,148 @@
+extends layout.pug
+
+block content
+	- // Slidear
+	section#showcase
+		div#myCarousel.carousel.slide(data-ride="carousel")
+			ol.carousel-indicators
+				li.active(data-target="#myCarousel" data-slide-to="0")
+				li(data-target="#myCarousel" data-slide-to="1")
+				li(data-target="#myCarousel" data-slide-to="2")
+			div.carousel-inner
+				div.carousel-item.carousel-image-1.active
+					div.container
+						div.carousel-caption.d-none.d-sm-block.text-right.mb-5
+							//- h1.display-3 Construlle tu sueño.
+							//- p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis eveniet quam.
+							//- a.btn.btn-danger.btn-lg(href="#") Learn More
+				div.carousel-item.carousel-image-2
+					div.container
+						div.carousel-caption.d-none.d-sm-block.text-right.mb-3
+							//- h1.display-3 Construlle tu sueño.
+							//- p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis eveniet quam.
+							//- a.btn.btn-danger.btn-lg(href="#") Learn More
+				div.carousel-item.carousel-image-3
+					div.container
+						div.carousel-caption.d-none.d-sm-block.text-right.mb-1
+							//- h1.display-3 Construlle tu sueño.
+							//- p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis eveniet quam.
+							//- a.btn.btn-danger.btn-lg(href="#") Learn More
+			a(href="#myCarousel" data-slide="prev").carousel-control-prev
+				span.carousel-control-prev-icon
+			a(href="#myCarousel" data-slide="next").carousel-control-next
+				span.carousel-control-next-icon
+
+	section#home-icons.py-5
+		div.container
+			div.row
+				div.col-md-4.mb-4.text-center
+					i.fa.fa-cog.mb-2
+					h3 Turning Gears
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, maxime.
+				div.col-md-4.mb-4.text-center
+					i.fa.fa-cloud.mb-2
+					h3 Turning Gears
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, maxime.
+				div.col-md-4.mb-4.text-center
+					i.fa.fa-cart-plus.mb-2
+					h3 Turning Gears
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, maxime.
+
+	section#home-heading.py-5
+		div.dark-overlay
+			div.row
+				div.col
+					div.container.pt-5
+						h1 Are You Ready To Get Started?
+						p.d-none.d-md-block Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis numquam praesentium perspiciatis qui.
+
+
+	section#info.py-3
+		div.container
+			div.row
+				div.col-md-6.align-self-center
+					h3 Lorem Ipsum
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae eaque quos eligendi, laboriosam. Culpa consequuntur illum facere id molestias.
+					a.btn.btn-outline-danger.btn-lg(href="#") Learn More
+				div.col-md-6
+					img(src="img/laptop.jpeg").img-fluid
+
+	section#video-play
+		div.dark-overlay
+			div.row
+				div.col
+					div.container.p-5
+						a.video(href="#" data-video="https://www.youtube.com/embed/HnwsG9a5riA" data-toggle="modal" data-target="#videoModal")
+							i.fa.fa-play
+						h1 See What We Do
+
+	section#gallery.py-5
+		div.container
+			h1.text-center Photo Gallery
+			p.text-center Check out our photos
+			div.row.mb-4
+				div.col-md-4
+					a(href="http://lorempixel.com/560/560/business/1" data-toggle="lightbox" data-gallery="img-gallery")
+						img(src="img/gal1.jpeg").img-fluid
+				div.col-md-4
+					a(href="http://lorempixel.com/560/560/business/2" data-toggle="lightbox" data-gallery="img-gallery")
+						img(src="img/gal2.jpeg").img-fluid
+				div.col-md-4
+					a(href="http://lorempixel.com/560/560/business/3" data-toggle="lightbox" data-gallery="img-gallery")
+						img(src="img/gal3.jpeg").img-fluid
+			div.row.mb-4
+				div.col-md-4
+					a(href="http://lorempixel.com/560/560/business/4" data-toggle="lightbox" data-gallery="img-gallery")
+						img(src="img/gal4.jpeg").img-fluid
+				div.col-md-4
+					a(href="http://lorempixel.com/560/560/business/5" data-toggle="lightbox" data-gallery="img-gallery")
+						img(src="img/gal5.jpeg").img-fluid
+				div.col-md-4
+					a(href="http://lorempixel.com/560/560/business/6" data-toggle="lightbox" data-gallery="img-gallery")
+						img(src="img/gal6.jpeg").img-fluid
+
+	section#newsletter.text-center.p-5.bg-dark.text-white
+		div.container
+			div.row
+				div.col
+					h1 Signup For Our Newsletter
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis magnam similique esse assumenda quasi repellendus illum perferendis quos aliquid possimus.
+					form.form-inline.justify-content-center
+						label.sr-only(for="name") Name
+						input#name(type="text" placeholder="Enter Name").form-control.mb-2.mr-sm-2.mb-sm-0
+
+						label.sr-only(for="email") Name
+						input#email(type="email" placeholder="Enter Email").form-control.mb-2.mr-sm-2.mb-sm-0
+						button(type="submit").btn.btn-primary Enviar
+
+	div.modal.fade#videoModal
+		div.modal-dialog
+			div.modal-content
+				div.modal-body
+					button.close(data-dismiss="modal")
+						span &times;
+					iframe(src="" height="350" width="100%" frameborder="0" allowfullscreen)
+	//- header.pt-4
+	//- 	div.container
+	//- 		div.row
+	//- 			div.col-md-6
+	//- 				h1 Pagina principal
+	//- section.py-4.mb-4.bg-light
+	//- 	div.container
+	//- 		div.row
+	//- 			div.col-md-3.visible-md
+	//- 				div.card
+	//- 					div.card-header.text-center
+	//- 						p.p-0.m-0 Temario
+	//- 					div.card-body
+	//- 						ul.list-group.list-group-flush.text-center
+	//- 							li.list-group-item 
+	//- 								a(href="#") Noticias Recientes
+	//- 							li.list-group-item 
+	//- 								a(href="#") Servicios
+	//- 							li.list-group-item 
+	//- 								a(href="#") Eventos
+	//- 							li.list-group-item 
+	//- 								a(href="#") Colaboradores
+					a.btn.btn-primary.btn-block(data-toggle="modal" data-target="#addPostModal") <i class="fa fa-plus"></i> Add Post
+	script(src='/js/script.js')

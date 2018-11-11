@@ -1,0 +1,17 @@
+body {
+  overflow-x: hidden; }
+
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1em !important;
+  padding-right: 1em !important; }
+
+.navbar .nav-item .nav-link:hover {
+  border-left: #1997c6 3px solid; }
+
+.navbar .nav-item.active {
+  border-left: #444 3px solid; }
+
+.fa {
+  font-size: 55px; }

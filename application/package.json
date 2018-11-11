@@ -1,0 +1,38 @@
+{
+  "name": "baseNode",
+  "version": "1.0.0",
+  "description": "Proyecto Base",
+  "main": "server.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.14.0",
+    "express-method-override": "0.0.3",
+    "express-session": "^1.15.6",
+    "mongoose": "^4.12.4",
+    "pug": "^2.0.0-rc.4",
+    "request": "^2.83.0",
+    "serve-favicon": "^2.4.5",
+    "bootstrap": "4.0.0-beta",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.0"
+  },
+  
+  "scripts": {
+    "serve": "gulp serve",
+    "sass": "gulp sass",
+    "es6": "gulp es6",
+    "css": "gulp css",
+    "watch:sass": "onchange \"./src/scss/**\" -- npm run sass",
+    "watch:es6": "onchange \"./src/es6/**\" -- npm run es6",
+    "watch:dev": "parallelshell \"npm run serve\" \"npm run watch:sass\" \"npm run watch:es6\"",
+    "start": "supervisor -i src,dist server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.iiiepe.net:luis.vega/baseNode.git"
+  },
+  "author": "Luis Vega",
+  "license": "ISC"
+}
